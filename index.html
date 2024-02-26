@@ -25,8 +25,358 @@
 <body>
 	<!-- wrapper -->
 	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="#" class="header__btn header__btn--green btn">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-daily"></use>
+						</svg>
+						<span>Daily</span>
+					</a>
+					<a href="#" class="header__btn btn">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-unlimited"></use>
+						</svg>
+						<span>Unlimited</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- game -->
+			<section class="game" id="game" style="background-image: url(img/game-bg.png);">
+				<div class="container">
+					<!-- add class 'is--hidden' for hide block -->
+					<div class="game__preview">
+						<h3 class="game__title">Wordle</h3>
+						<button class="game__btn">Play</button>
+						<span class="game__help">Press the «Play» button to start playing</span>
+					</div>
+				</div>
+			</section>
+			<!-- end of game -->
+			<!-- description -->
+			<section class="description section-indent-sm" id="description">
+				<div class="container">
+					<div class="description__wrapper">
+						<picture class="description__img">
+							<img src="img/logotype-sm.svg" alt="Wordle">
+						</picture>
+						<div class="description__body">
+							<h1 class="description__title">Wordle Game: Guess the Word</h1>
+							<p class="description__description">The rules are very simple: You need to guess the hidden word (from 4 to 11 letters) in 6 tries. To get started, just type any word on the first line. If the letter is guessed correctly and is in the correct place, it will be highlighted in green, if the letter is in the word, but in the wrong place - in yellow, and if the letter is not in the word, it will remain gray. Can you guess the hidden word in 6 tries?</p>
+							<ul class="description__list">
+								<li class="description__list-item">
+									<a href="#how-to" class="description__link">How to play</a>
+								</li>
+								<li class="description__list-item">
+									<a href="#faq" class="description__link">FAQ</a>
+								</li>
+								<li class="description__list-item">
+									<a href="#select-lang" class="description__link">Languages</a>
+								</li>
+								<li class="description__list-item">
+									<a href="#about" class="description__link">About</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of description -->
+			<!-- how to play -->
+			<section class="how-to section-indent" id="how-to">
+				<div class="container">
+					<div class="section-heading" style="background: #f5ecd1;">
+						<h2 class="section-heading__title">How to play Wordle?</h2>
+					</div>
+					<ul class="how-to__wrapper">
+						<li class="how-to__item">
+							<div class="how-to__elem">
+								<h3 class="how-to__title">Enter the first word</h3>
+								<div class="how-to__content">
+									<p class="how-to__description">To get started, simply enter any five-letter word to find out which letters match the hidden word. In total, you will have 6 tries to guess the hidden word.</p>
+									<picture class="how-to__img">
+										<img src="img/how-to-01.png" alt="Image">
+									</picture>
+								</div>
+							</div>
+						</li>
+						<li class="how-to__item">
+							<div class="how-to__elem">
+								<h3 class="how-to__title">Find out what letters are in the hidden word</h3>
+								<div class="how-to__content">
+									<p class="how-to__description">If any letters are marked in yellow, this means that this letter is in the hidden word, but doesn't match the exact location in this word. If any letter is marked in green, then it is in that word and is in the exact location. If the letter remains gray, then it isn't in the hidden word.</p>
+									<picture class="how-to__img">
+										<img src="img/how-to-02.png" alt="Image">
+									</picture>
+								</div>
+							</div>
+						</li>
+						<li class="how-to__item">
+							<div class="how-to__elem">
+								<h3 class="how-to__title">Try to guess the hidden word</h3>
+								<div class="how-to__content">
+									<p class="how-to__description">Now if you know a few letters with the exact location (green) and a few letters that are in the word (yellow) you can try to solve the hidden word and win the game!</p>
+									<picture class="how-to__img">
+										<img src="img/how-to-03.png" alt="Image">
+									</picture>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- end of how to play -->
+			<!-- faq -->
+			<section class="faq section-indent" id="faq">
+				<div class="container">
+					<div class="section-heading" style="background: #efe7f7;">
+						<h2 class="section-heading__title">Frequently Asked Questions</h2>
+					</div>
+					<div class="faq__wrapper">
+						<div class="accordeon faq__item is--open">
+							<h3 class="accordeon__trigger">What are the rules of the Wordle game?</h3>
+							<div class="accordeon__wrapper" style="display: block;">
+								<div class="accordeon__content">
+									<p>The main goal of the game is to guess the hidden word in 6 tries. In each line, you need to enter any word from 4 to 11 letters to find out what letters are in the target word. Depending on which word you entered, the letters will be highlighted in three colors:</p>
+									<ul>
+										<li>Grey - the letter isn't in the target word at all.</li>
+										<li>Yellow - the letter is in the word but in the wrong spot.</li>
+										<li>Green - the letter is in the word and in the correct spot.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordeon faq__item">
+							<h3 class="accordeon__trigger">What is the best word to start the game?</h3>
+							<div class="accordeon__wrapper">
+								<div class="accordeon__content">
+									<p>The main goal of the game is to guess the hidden word in 6 tries. In each line, you need to enter any word from 4 to 11 letters to find out what letters are in the target word. Depending on which word you entered, the letters will be highlighted in three colors:</p>
+									<ul>
+										<li>Grey - the letter isn't in the target word at all.</li>
+										<li>Yellow - the letter is in the word but in the wrong spot.</li>
+										<li>Green - the letter is in the word and in the correct spot.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordeon faq__item">
+							<h3 class="accordeon__trigger">What dictionary are you using?</h3>
+							<div class="accordeon__wrapper">
+								<div class="accordeon__content">
+									<p>The main goal of the game is to guess the hidden word in 6 tries. In each line, you need to enter any word from 4 to 11 letters to find out what letters are in the target word. Depending on which word you entered, the letters will be highlighted in three colors:</p>
+									<ul>
+										<li>Grey - the letter isn't in the target word at all.</li>
+										<li>Yellow - the letter is in the word but in the wrong spot.</li>
+										<li>Green - the letter is in the word and in the correct spot.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of faq -->
+			<!-- select language -->
+			<section class="select-lang section-indent" id="select-lang">
+				<div class="container">
+					<div class="section-heading" style="background: #e2f0ed;">
+						<h2 class="section-heading__title">Select Language</h2>
+					</div>
+					<div class="select-lang__wrapper">
+						<div class="select-lang__item">
+							<button class="select-lang__btn is--active">
+								<img src="img/langs/en.svg" alt="Flag">
+								<span>English</span>
+							</button>
+						</div>
+						<div class="select-lang__item">
+							<button class="select-lang__btn">
+								<img src="img/langs/sp.svg" alt="Flag">
+								<span>Español</span>
+							</button>
+						</div>
+						<div class="select-lang__item">
+							<button class="select-lang__btn">
+								<img src="img/langs/fr.svg" alt="Flag">
+								<span>Français</span>
+							</button>
+						</div>
+						<div class="select-lang__item">
+							<button class="select-lang__btn">
+								<img src="img/langs/de.svg" alt="Flag">
+								<span>Deutsch</span>
+							</button>
+						</div>
+						<div class="select-lang__item">
+							<button class="select-lang__btn">
+								<img src="img/langs/it.svg" alt="Flag">
+								<span>Italiano</span>
+							</button>
+						</div>
+						<div class="select-lang__item">
+							<button class="select-lang__btn">
+								<img src="img/langs/pl.svg" alt="Flag">
+								<span>Polski</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of select language -->
+			<!-- select mode -->
+			<section class="select-mode section-indent" id="faq">
+				<div class="container">
+					<div class="section-heading" style="background: #e9ebdc;">
+						<h2 class="section-heading__title">Select mode</h2>
+					</div>
+					<div class="select-mode__wrapper">
+						<div class="select-mode__item">
+							<button class="select-mode__btn">4 Letter Wordle</button>
+						</div>
+						<div class="select-mode__item">
+							<button class="select-mode__btn">5 Letter Wordle</button>
+						</div>
+						<div class="select-mode__item">
+							<button class="select-mode__btn">6 Letter Wordle</button>
+						</div>
+						<div class="select-mode__item">
+							<button class="select-mode__btn">7 Letter Wordle</button>
+						</div>
+						<div class="select-mode__item">
+							<button class="select-mode__btn">8 Letter Wordle</button>
+						</div>
+						<div class="select-mode__item">
+							<button class="select-mode__btn">9 Letter Wordle</button>
+						</div>
+						<div class="select-mode__item">
+							<button class="select-mode__btn">10 Letter Wordle</button>
+						</div>
+						<div class="select-mode__item">
+							<button class="select-mode__btn">11 Letter Wordle</button>
+						</div>
+					</div>
+					<a href="#" class="select-mode__play">Play now</a>
+				</div>
+			</section>
+			<!-- end of select mode -->
+			<!-- other games -->
+			<section class="other-games section-indent" id="other-games">
+				<div class="container">
+					<div class="section-heading" style="background: #f1e5f0;">
+						<h2 class="section-heading__title">Play Other Games</h2>
+					</div>
+					<div class="other-games__wrapper">
+						<a href="#" class="other-games__item">
+							<picture class="other-games__img">
+								<img src="img/game-1.png" alt="Image">
+							</picture>
+							<div class="other-games__body">
+								<span class="other-games__title">Spelling Bee</span>
+								<span class="other-games__description">Make max number <br>of words with 7 <br>letters</span>
+							</div>
+						</a>
+						<a href="#" class="other-games__item">
+							<picture class="other-games__img">
+								<img src="img/game-2.png" alt="Image">
+							</picture>
+							<div class="other-games__body">
+								<span class="other-games__title">Crosswordle</span>
+								<span class="other-games__description">Solve the Crossword <br>like Wordle game</span>
+							</div>
+						</a>
+						<a href="#" class="other-games__item">
+							<picture class="other-games__img">
+								<img src="img/game-3.png" alt="Image">
+							</picture>
+							<div class="other-games__body">
+								<span class="other-games__title">Globle</span>
+								<span class="other-games__description">Can you guess the <br>hidden Country on <br>the globe?</span>
+							</div>
+						</a>
+						<a href="#" class="other-games__item">
+							<picture class="other-games__img">
+								<img src="img/game-4.png" alt="Image">
+							</picture>
+							<div class="other-games__body">
+								<span class="other-games__title">Phrazle</span>
+								<span class="other-games__description">Guess the Phrase in <br>6 tries like Wordle <br>game</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of other games -->
+			<!-- features -->
+			<section class="features section-indent" id="features">
+				<div class="container">
+					<div class="section-heading" style="background: #f6eaed;">
+						<h2 class="section-heading__title">Key Features of our Game</h2>
+					</div>
+					<div class="features__wrapper">
+						<article class="features__item">
+							<picture class="features__img">
+								<img src="img/feature-01.svg" alt="Image">
+							</picture>
+							<div class="features__body">
+								<h3 class="features__title">Free to play</h3>
+								<p class="features__description">You can play our game for free on <br>any device and without registration</p>
+							</div>
+						</article>
+						<article class="features__item">
+							<picture class="features__img">
+								<img src="img/feature-02.svg" alt="Image">
+							</picture>
+							<div class="features__body">
+								<h3 class="features__title">Unlimited mode</h3>
+								<p class="features__description">Play as much as you like simply by <br>turning on the unlimited mode.</p>
+							</div>
+						</article>
+						<article class="features__item">
+							<picture class="features__img">
+								<img src="img/feature-03.svg" alt="Image">
+							</picture>
+							<div class="features__body">
+								<h3 class="features__title">Multilingual</h3>
+								<p class="features__description">We have developed Wordle for <br>different languages and dictionaries.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- end of features -->
+			<!-- rating -->
+			<section class="rating section-indent" id="rating">
+				<div class="container">
+					<div class="section-heading" style="background: #fff2cb;">
+						<h2 class="section-heading__title">Rate Wordle</h2>
+					</div>
+					<div class="rating__wrapper">
+						<div class="rating-select rating__select">
+							<input type="radio" id="star5" name="rating" value="5" class="rating-select__input">
+							<label for="star5" title="5 star" class="rating-select__label"></label>
+							<input type="radio" id="star4" name="rating" value="4" class="rating-select__input">
+							<label for="star4" title="4 star" class="rating-select__label"></label>
+							<input type="radio" id="star3" name="rating" value="3" class="rating-select__input">
+							<label for="star3" title="3 star" class="rating-select__label"></label>
+							<input type="radio" id="star2" name="rating" value="2" class="rating-select__input">
+							<label for="star2" title="2 star" class="rating-select__label"></label>
+							<input type="radio" id="star1" name="rating" value="1" class="rating-select__input">
+							<label for="star1" title="1 star" class="rating-select__label"></label>
+						</div>
+						<div class="rating__group">
+							<span class="rating__value">4.7</span>
+							<span class="rating__help">1,204 votes</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of rating -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
